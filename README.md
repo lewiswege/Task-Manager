@@ -1,26 +1,66 @@
-<h1> Task Manager Web-App </h1>
-<h2>A simple task manager application as my final project</h2>
-    <p>This is a research project to improve my problem-solving and time-management skills</p>
+# Task Manager App
 
-<h3>Technologies Used</h3>
-    <ol>
-        FastAPI for the Back-End
-        Fetch API for HTTP Requests
-        HTML, CSS and JavaScript for the Front-End
-        JSON for data storage
-        Hash Table Data Structure
-    </ol>
+## Overview
+The Task Manager App is a simple web application for managing tasks, featuring a FastAPI backend and a JavaScript-based frontend. Tasks are stored persistently in a JSON file. Users can add, view, and delete tasks via the web interface.
 
-<p>The application allows users to add tasks to a task queue and delete them when they need to</p>
+---
 
-<p>The app uses API routes to perform CRUD operations, making the entire application work.</p>
+## Features
+- **Add Tasks:** Users can add tasks with a title and a due date.
+- **View Tasks:** The app displays all saved tasks in a clean, organized layout.
+- **Delete Tasks:** Users can remove tasks they no longer need.
+- **Persistent Storage:** Tasks are saved in a `tasks.json` file, ensuring data is retained across app restarts.
 
-<p>JavaScript is also incorporated in the app to handle the frontend logic using fetch API, which sends requests to localhost:8000; the port on which unicorn runs. This handles the request of the task queue and updates the UI dynamically whenever the user refreshes the Tasks or adds new ones to the queue</p>
+---
 
-<p>FastAPI is the technology that does all the magic, it handles the API endpoint and also handles the rendering of the application's UI</p>
+## Project Architecture
+```
+task-manager-app/
+|
+├── app/                 # Backend application files
+|   ├── __init__.py      # (Optional) Init file for the backend module
+|   ├── main.py          # FastAPI backend server file
+|   ├── tasks.json       # JSON file to store tasks persistently
+|
+├── static/              # Static files for the frontend (HTML, CSS, JS)
+|   ├── index.html       # Main HTML file for the UI
+|   ├── styles.css       # CSS file for styling
+|   └── script.js        # JavaScript for frontend logic
+|
+└── templates/           # (Optional) Templating folder (not used in this app)
+```
 
-<p>The application has limited features but does the basic job a Task Manager application does but its a fully fleded app with a front end UI, a database in json format, API calls and dynamic content</p>
+---
 
-<p>Clone the repo from your terminal move into the root of the repo and run the application through the following command</p>
+## Setup Instructions
 
-<strong>uvicorn app.main:app --reload</strong>
+### Prerequisites
+- Python 3.9+
+- pip
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd task-manager-app
+   ```
+2. Create a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install fastapi uvicorn
+   ```
+
+---
+
+## Running the Application
+1. Start the FastAPI backend:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+2. Open your web browser and go to:
+   ```
+   http://127.0.0.1:8000
