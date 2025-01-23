@@ -64,3 +64,39 @@ task-manager-app/
 2. Open your web browser and go to:
    ```
    http://127.0.0.1:8000
+
+   ## Usage
+1. **Add Tasks:**
+   - Fill in the "Task Title" and "Due Date" fields in the web interface.
+   - Click the "Add Task" button to save the task.
+
+2. **View Tasks:**
+   - All tasks are displayed in the "Task List" section.
+
+3. **Delete Tasks:**
+   - Click the "Delete" button next to a task to remove it.
+
+---
+
+## Communication Flow
+1. **Frontend (HTML/JS):** Sends HTTP requests (`GET`, `POST`, `DELETE`) to FastAPI endpoints.
+2. **Backend (FastAPI):** Processes these requests, interacts with `tasks.json`, and sends JSON responses back.
+3. **Data Flow:**
+   - User actions trigger JavaScript functions.
+   - JavaScript communicates with FastAPI endpoints.
+   - FastAPI handles data in `tasks.json` and updates the UI dynamically.
+
+---
+
+## Example API Endpoints
+- `GET /tasks`: Retrieve all tasks.
+- `POST /tasks`: Add a new task.
+- `DELETE /tasks/{task_id}`: Delete a task by ID.
+
+---
+
+## Future Enhancements
+- Implement task editing.
+- Add user authentication.
+- Migrate from JSON storage to a database.
+- Improve UI with advanced frameworks like React or Vue.js.
