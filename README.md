@@ -19,7 +19,7 @@
 
 <p>FastAPI is the technology that does all the magic, it handles the API endpoint and also handles the rendering of the application's UI</p>
 
-<p>The application has limited features but does the basic job a Task Manager application does</p>
+<p>The application has limited features but does the basic job a Task Manager application does but its a fully fleded app with a front end UI, a database in json format, API calls and dynamic content</p>
 
 <p>Clone the repo from your terminal move into the root of the repo and run the application through the following command</p>
 
