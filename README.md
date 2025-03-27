@@ -1,7 +1,7 @@
 # Task Manager App
 
 ## Overview
-The Task Manager App is a simple web application for managing tasks, featuring a FastAPI backend and a JavaScript-based frontend. Tasks are stored persistently in a JSON file. Users can add, view, and delete tasks via the web interface.
+The Task Manager App is a simple web application for managing tasks. It features a FastAPI backend and a JavaScript-based frontend. Tasks are stored persistently in a JSON file. Users can add, view, and delete tasks via the web interface.
 
 ---
 
